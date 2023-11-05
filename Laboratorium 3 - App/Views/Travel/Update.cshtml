@@ -1,0 +1,49 @@
+﻿@model Travel
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<h1>Edytuj wycieczke</h1>
+<form asp-controller="Travel" asp-action="Update" method="post">
+    <input asp-for="Id" />
+    <div class="mb-3">
+        <label asp-for="Name">Nazwa Wycieczki</label>
+        <input class="form-control" asp-for="Name" />
+        <span class="text-danger" asp-validation-for="Name"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="StartDate">Data Rozpoczęcia</label>
+        <input class="form-control" asp-for="StartDate" />
+        <span class="text-danger" asp-validation-for="StartDate"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="EndDate">Data Zakończenia</label>
+        <input class="form-control" asp-for="EndDate" />
+        <span class="text-danger" asp-validation-for="EndDate"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="StartPlace">Miejsce Rozpoczęcia</label>
+        <input class="form-control" asp-for="StartPlace" />
+        <span class="text-danger" asp-validation-for="StartPlace"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="EndPlace">Miejsce Zakończenia</label>
+        <input class="form-control" asp-for="EndPlace" />
+        <span class="text-danger" asp-validation-for="EndPlace"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="NumbParticipants">Liczba uczestników</label>
+        <input class="form-control" asp-for="NumbParticipants" />
+        <span class="text-danger" asp-validation-for="NumbParticipants"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Guide">Przewodnik</label>
+        <input class="form-control" asp-for="Guide" />
+        <span class="text-danger" asp-validation-for="Guide"></span>
+    </div>
+    <div class="mb-3">
+        <button class="btn btn-primary" type="submit"> Zapisz zmiany</button>
+    </div>
+</form>

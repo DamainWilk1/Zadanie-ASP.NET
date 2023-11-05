@@ -1,0 +1,28 @@
+﻿@model Travel
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<h1>Szczegóły wycieczki</h1>
+<p>Nazwa Wycieczki</p>
+<h4>@Model.Name</h4>
+<p>Data Rozpoczęcia</p>
+<h4>@Model.StartDate</h4>
+<p>Data Zakończenia</p>
+<h4>@Model.EndDate</h4>
+<p>Miejsce Początkowe</p>
+<h4>@Model.StartPlace</h4>
+<p>Miejsce Zakończenia</p>
+<h4>@Model.EndPlace</h4>
+<p>Liczba Uczestników</p>
+<h4>@Model.NumbParticipants</h4>
+<p>Przewodnik</p>
+<h4>@Model.Guide</h4>
+
+
+<form asp-action="Index">
+    <input asp-for="Id" />
+    <button class="btn btn-primary" type="submit">WRÓĆ</button>
+</form>
