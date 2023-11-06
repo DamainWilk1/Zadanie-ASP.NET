@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System.ComponentModel.DataAnnotations;
 using System.Reflection;
+using System.ComponentModel.DataAnnotations;
 
 namespace Laboratorium_3___App.Models
 {
@@ -46,5 +46,8 @@ namespace Laboratorium_3___App.Models
         [Display(Name = "data urodzin")]
         [DataType(DataType.Date)]
         public DateTime? Birth { get; set; }
+
+        [HiddenInput]
+        public DateTime Created { get; set; }
     }
 }

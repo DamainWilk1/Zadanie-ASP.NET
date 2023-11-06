@@ -4,8 +4,8 @@
     {
         void add(Contact contact);
         void RemoveByID(int id);
-        void Update(Contact contact);
         List<Contact> FindAll();
+        void Update(Contact contact);
         Contact? FindByID(int id);
     }
 }

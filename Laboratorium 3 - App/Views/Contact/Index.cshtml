@@ -19,6 +19,9 @@
                     Email
                 </th>
                 <th>
+                    Prioritet
+                </th>
+                <th>
                     Akcje
                 </th>
             </tr>
@@ -32,6 +35,9 @@
                     </td>
                     <td>
                         @item.Value.Email
+                    </td>
+                    <td>
+                        @item.Value.Priority
                     </td>
                     <td>
                         <a class="btn btn-outline-success" asp-action="Update" asp-route-id=@item.Key>Edycja</a>
